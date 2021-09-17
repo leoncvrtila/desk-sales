@@ -1,0 +1,66 @@
+{
+  "name": "desk-clients",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@david.kucsai/react-pdf-table": "^0.3.0",
+    "@nivo/bar": "^0.62.0",
+    "@nivo/geo": "^0.62.0",
+    "@nivo/pie": "^0.62.0",
+    "@react-pdf/renderer": "^1.6.9",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "colorette": "^1.2.0",
+    "css-loader": "^3.6.0",
+    "firebase": "^7.16.0",
+    "firebase-admin": "^8.13.0",
+    "firebase-functions": "^3.7.0",
+    "firestore": "^1.1.6",
+    "html2canvas": "^1.0.0-rc.5",
+    "html2pdf-fix-jspdf": "0.0.4",
+    "macaddress": "^0.5.1",
+    "nivo": "^0.31.0",
+    "node-sass": "^4.14.1",
+    "pdf-maker": "0.0.2",
+    "pdfmake": "^0.1.66",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-pdf": "^4.1.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-simple-maps": "^2.1.2",
+    "react-tooltip": "^4.2.7",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.26.10",
+    "thunk": "0.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "rimraf ./build && react-scripts build && rimraf ./build/**/*.map",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "jscrambler": "^5.5.10",
+    "postcss-loader": "^3.0.0"
+  }
+}

@@ -1,0 +1,1337 @@
+/*-----------------RESPONSIVE*/
+/*-----------------LAYOUT*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #1d2027;
+}
+
+section {
+  width: 100%;
+  background: #1d2027;
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 7s ease infinite;
+  animation: AnimationName 7s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+footer {
+  text-align: -webkit-center;
+  margin: 10%;
+  color: aliceblue;
+}
+
+footer a, footer a:link {
+  text-decoration: none;
+  color: #26b9a1;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #4ad3bc;
+  cursor: pointer;
+}
+
+/*-----------------------SCROLL*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+@media only screen and (max-width: 425px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+  }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dfdfdf;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #343a40;
+}
+
+@media only screen and (max-width: 425px) {
+  ::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: #8e8e8e;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  ::-webkit-scrollbar-thumb {
+    background: #8e8e8e;
+  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4f575f;
+}
+
+/*-----------------RESPONSIVE*/
+/*-----------------NAV*/
+nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #2c303a;
+  border-bottom: 1px solid #6e727a;
+}
+
+@media only screen and (max-width: 425px) {
+  nav {
+    overflow-x: scroll;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  nav {
+    overflow-x: scroll;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  nav {
+    margin-left: 1.5%;
+  }
+}
+
+nav img {
+  height: 50px;
+  width: 50px;
+  margin: 8px;
+  vertical-align: middle;
+}
+
+nav a, nav a:link {
+  text-decoration: none;
+  color: #6e727a;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-align: -webkit-center;
+  border-radius: 5px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+@media only screen and (max-width: 425px) {
+  nav a, nav a:link {
+    margin-right: 3%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  nav a, nav a:link {
+    margin-right: 3%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  nav a, nav a:link {
+    margin-right: 3%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    padding: 20px;
+  }
+}
+
+.is-active {
+  color: white;
+}
+
+/*-----------------RESPONSIVE*/
+/*-----------------MAIN*/
+.Main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 95%;
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.yearsWrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+}
+
+.yearsNum {
+  width: 12%;
+  text-align: center;
+  background: #1d2027;
+  cursor: pointer;
+  color: whitesmoke;
+  padding: 1.8%;
+  border-radius: 3px;
+}
+
+.sexWrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sex {
+  width: 35%;
+  color: whitesmoke;
+  text-align: center;
+  padding: 5%;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.nameWrapp {
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2%;
+}
+
+.contactInfo {
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2%;
+}
+
+.AddNewWrapp {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
+  background: white;
+  border-radius: 5px;
+  margin-top: 2%;
+}
+
+.services {
+  background: white;
+  padding: 2.4%;
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
+  width: 374px;
+  -webkit-box-shadow: 0px 1px 1px 0px #dedede;
+          box-shadow: 0px 1px 1px 0px #dedede;
+  cursor: pointer;
+}
+
+.servicesUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabSwitch {
+  margin-left: auto;
+  width: 10%;
+}
+
+.services img {
+  height: 17px;
+  margin-left: auto;
+}
+
+.servicesOpt {
+  border-top: 1px solid #d8d8d8;
+  margin-top: 2%;
+  padding-top: 1%;
+}
+
+.service {
+  padding: 1.8%;
+  border: 1px solid #b4b2b2;
+  border-radius: 3px;
+  margin-top: 1.3%;
+  cursor: pointer;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.service input {
+  padding: 3px;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid #b4b2b2;
+}
+
+.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.makeServices {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
+  background: white;
+  border-radius: 5px;
+  margin-top: 2%;
+}
+
+.makeServices h3 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.makeServicesInputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.makeServicesInputs input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  font-size: 16px;
+}
+
+.makeServicesBtn {
+  padding: 1%;
+  width: 8%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  background: #1d2027;
+  color: whitesmoke;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.spinnerDiv {
+  display: block;
+  z-index: 99999;
+  position: absolute;
+  background: #1d2027;
+  width: 100%;
+  height: 100%;
+}
+
+.channelWrapp {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
+  background: white;
+  border-radius: 5px;
+  margin-top: 2%;
+}
+
+.moneyInfo {
+  text-align: center;
+}
+
+.channelWrappFilters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 2%;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 2%;
+}
+
+.pieInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  color: #7c838e;
+  margin-top: 3%;
+}
+
+.pieInfo span {
+  padding-right: 15px;
+}
+
+.pieInfo div {
+  width: 50%;
+}
+
+.pieInfo h4 {
+  margin-bottom: 1%;
+  background: #1d2027;
+  padding: 13px;
+  border-radius: 3px;
+  color: #f2f2f3;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.countyInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  color: #7c838e;
+  margin-top: 3%;
+}
+
+.countyInfo span {
+  padding-right: 15px;
+}
+
+.countyInfo div:nth-child(1) {
+  width: 100%;
+}
+
+.countyInfo h4 {
+  margin-bottom: 1%;
+  background: #1d2027;
+  padding: 13px;
+  border-radius: 3px;
+  color: #f2f2f3;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  width: 250%;
+  border: none;
+  border-spacing: 0px;
+}
+
+table td, th {
+  text-align: center;
+  padding: 15px;
+}
+
+table tr:hover {
+  cursor: pointer;
+}
+
+thead {
+  background: #343a40;
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+tbody {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+tbody tr:nth-child(even):hover {
+  background-color: #e6e6e6;
+}
+
+tbody tr:nth-child(odd):hover {
+  background-color: #e6e6e6;
+}
+
+td {
+  border-right: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.searchBox {
+  border-radius: 3px;
+  border: 1px solid #d6d6d6;
+  -webkit-box-shadow: 0px 1px 1px 0px #dedede;
+          box-shadow: 0px 1px 1px 0px #dedede;
+  margin: 2%;
+  padding: 2%;
+  background: white;
+}
+
+.searchBoxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.searchBoxes .Input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.searchBoxes button {
+  margin: 0;
+}
+
+.advancedSearch {
+  height: 30px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  cursor: pointer;
+  background: #f7f7f7;
+  -webkit-box-shadow: 0px 1px 1px 0px #dedede85;
+          box-shadow: 0px 1px 1px 0px #dedede85;
+  color: #4e4e4e;
+}
+
+.tableWrap {
+  width: 100%;
+  overflow: auto;
+  max-height: 700px;
+}
+
+.modalMemberWrap {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 2%;
+}
+
+.modalMember {
+  position: absolute;
+  width: 50%;
+  -webkit-box-shadow: 0px 1px 1px 0px #e4e4e4;
+          box-shadow: 0px 1px 1px 0px #e4e4e4;
+  border-radius: 3px;
+  border: 1px solid #e4e4e4;
+  color: black;
+  background-color: white;
+  padding: 40px;
+  padding-top: 70px;
+}
+
+.modalMember img {
+  height: 150px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+}
+
+.modalMemberProp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.modalMemberProp h4 {
+  width: 50%;
+}
+
+.modalMemberItem {
+  cursor: pointer;
+  width: 50%;
+}
+
+.modalMemberBtns {
+  position: absolute;
+  width: 50%;
+  padding: 10px;
+}
+
+.modalMemberBtns button:nth-of-type(1) {
+  float: right;
+}
+
+.modalMemberBtns button:nth-of-type(2) {
+  background: #b31313;
+}
+
+.modalMemberBtns button:nth-of-type(2):hover {
+  background: #d04c4c;
+}
+
+.modalMemberProp .Input {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.modalMemberProp button {
+  margin: 10px;
+}
+
+.modalMemberProp:hover {
+  background: #f1f1f1;
+}
+
+.Backdrop {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  height: 290%;
+  width: 100%;
+  top: 0;
+}
+
+.DeleteButtonTh, .DeleteButtonTd {
+  width: 4%;
+}
+
+.Membership .MembershipButtonTh, .Membership .DeactiveDeleteButtonTd {
+  width: 10%;
+}
+
+.DeactiveDeleteButtonTh button {
+  background: #cc3737;
+  border: 1px solid #cc3737;
+}
+
+.DeactiveDeleteButtonTh button:hover, .DeactiveDeleteButtonTd button:hover {
+  background: #d04c4c;
+}
+
+.DeleteButtonTh button {
+  background: #cc3737;
+  border: 1px solid #cc3737;
+}
+
+.DeleteButtonTd button, .DeleteButtonTh button {
+  width: 95%;
+}
+
+.DeleteButtonTh button:hover, .DeleteButtonTd button:hover {
+  background: #d04c4c;
+}
+
+/*-----------------RESPONSIVE*/
+/*-----------------AUTH*/
+.Auth {
+  width: 100%;
+}
+
+.ErrorMsg {
+  text-align: -webkit-center;
+  margin-top: 2%;
+  color: #e00f0f;
+}
+
+.Desk {
+  height: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 6%;
+}
+
+.AuthButton {
+  margin-top: 3%;
+}
+
+@media only screen and (max-width: 425px) {
+  .AuthButton {
+    width: 40%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+}
+
+.Login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Login form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  border: 0px solid #454950;
+  border-radius: 3px;
+  margin-top: 4%;
+  max-width: 40%;
+  background: #2f333c;
+  -webkit-box-shadow: 0px 2px 1px 1px #131417;
+          box-shadow: 0px 2px 1px 1px #131417;
+}
+
+@media only screen and (max-width: 425px) {
+  .Login form {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .Login form {
+    width: 100%;
+  }
+}
+
+button {
+  width: 20%;
+  height: 30px;
+  margin: 0 auto;
+  background: #1d2027;
+  border: 1px solid #454950;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #30353f;
+}
+
+button:focus {
+  outline: none;
+}
+
+/*-----------------RESPONSIVE*/
+/*-----------------INPUT*/
+.btn, .formButtons label, .submitBtn, .interestBtns {
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  color: black;
+  padding-top: 9px;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid #d6d6d6;
+  -webkit-box-shadow: 0px 1px 1px 0px #dedede;
+          box-shadow: 0px 1px 1px 0px #dedede;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: medium;
+}
+
+.input, .InputElement, .InputSearch {
+  border-radius: 3px;
+  border: 1px solid #d6d6d6;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: medium;
+  width: 400px;
+  -webkit-box-shadow: 0px 1px 1px 0px #dedede;
+          box-shadow: 0px 1px 1px 0px #dedede;
+}
+
+.formWrap {
+  background: #f6f7f9;
+  font-family: sans-serif;
+}
+
+.formWrap h1 {
+  text-align: -webkit-center;
+  padding-top: 5%;
+  font-size: xx-large;
+  color: #515547;
+}
+
+form {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #dedede;
+  -webkit-box-shadow: 0px 1px 1px 0px #afafaf;
+          box-shadow: 0px 1px 1px 0px #afafaf;
+  border-radius: 5px;
+  margin: 10%;
+  background: white;
+}
+
+form h4 {
+  margin-top: 10%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+form h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 18px;
+}
+
+form img {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form input[type=file] {
+  display: none;
+}
+
+.chooseImg {
+  border: 1px solid #656565;
+  border-radius: 50px;
+  padding: 5px;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20%;
+  cursor: pointer;
+}
+
+.chooseImg:hover {
+  background: #4f575f;
+  color: white;
+}
+
+.Form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: sans-serif;
+}
+
+.fieldOfInterest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 3%;
+}
+
+.Input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 425px) {
+  .InputElement {
+    width: 215px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .InputElement {
+    width: 300px;
+  }
+}
+
+.InputElement:focus, .InputSearch:focus {
+  outline: none;
+}
+
+.InputSearch {
+  max-height: 25px;
+}
+
+@media only screen and (max-width: 425px) {
+  .InputSearch {
+    width: 93%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .InputSearch {
+    width: 97%;
+  }
+}
+
+.formBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.formButtons {
+  margin: 15px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.formButtons label {
+  padding: 15px;
+}
+
+input[type=radio]:checked + label {
+  background: #343a40;
+  color: white;
+}
+
+.formButtons label:hover {
+  background: #efefef;
+}
+
+.btnsTittle {
+  text-align: center;
+}
+
+.submitBtn {
+  padding-top: 0px;
+  background: #343a40;
+  color: white;
+  height: 40px;
+  margin-left: 45%;
+}
+
+.submitBtn:hover {
+  background: #4f575f;
+}
+
+.errorModal {
+  position: fixed;
+  height: 90px;
+  width: 250px;
+  border: 1px solid #929292;
+  border-radius: 5px;
+  background: #b11919;
+  left: 15px;
+  bottom: 20px;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 2;
+  -webkit-box-shadow: 0px 1px 1px 0px #dedede;
+          box-shadow: 0px 1px 1px 0px #dedede;
+}
+
+.errorModal:hover {
+  background: #961717;
+  cursor: pointer;
+}
+
+.errorModal span:nth-of-type(2) {
+  font-size: x-large;
+  font-family: cursive;
+  top: -10px;
+  position: absolute;
+  right: 8px;
+}
+
+.FieldOfInterest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.chooseField {
+  border: 1px solid #656565;
+  border-radius: 50px;
+  padding: 5px;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40%;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+
+.interestBtns {
+  padding: 10px;
+}
+
+.searchBox button {
+  margin-top: 2%;
+}
+
+/*-----------------RESPONSIVE*/
+/*-----------------TABLE*/
+.Table table {
+  width: 170%;
+  margin-top: 2%;
+}
+
+.Table button {
+  width: 120%;
+}
+
+.TableButtonTh button {
+  background: #5ec395;
+  border: 1px solid #5ec395;
+}
+
+.TableButtonTh button:hover, .TableButtonTd button:hover {
+  background: #69cc9e;
+}
+
+.NotificationForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2%;
+}
+
+.NotificationForm form {
+  width: 80%;
+  margin: 0;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 425px) {
+  .NotificationForm form {
+    display: block;
+    margin-top: 4%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .NotificationForm form {
+    display: block;
+    margin-top: 4%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  .NotificationForm form {
+    margin-top: 4%;
+  }
+}
+
+.NotificationForm form h2 {
+  margin: 20px;
+  text-align: -webkit-center;
+}
+
+.NotificationForm input, .NotificationForm textarea {
+  border-radius: 3px;
+  border: 1px solid #a0a0a0;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: medium;
+  min-width: 800px;
+  max-width: 800px;
+  -webkit-box-shadow: 0px 1px 1px 0px #dedede;
+          box-shadow: 0px 1px 1px 0px #dedede;
+  margin-bottom: 2%;
+  outline: none;
+}
+
+@media only screen and (max-width: 425px) {
+  .NotificationForm input, .NotificationForm textarea {
+    min-width: 95%;
+    max-width: 95%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .NotificationForm input, .NotificationForm textarea {
+    min-width: 95%;
+    max-width: 95%;
+  }
+}
+
+.NotificationForm textarea {
+  min-height: 150px;
+}
+
+.NotificationForm button {
+  width: 20%;
+}
+
+@media only screen and (max-width: 425px) {
+  .NotificationForm button {
+    width: 50%;
+  }
+}
+
+.bodiesEmailBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.bodiesEmailBtns div {
+  height: 30px;
+  margin: 0 auto;
+  width: 20%;
+  border: 1px solid #e2e2e2;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  color: white;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: -webkit-center;
+}
+
+@media only screen and (max-width: 425px) {
+  .bodiesEmailBtns div {
+    width: 50%;
+  }
+}
+
+.SendEmail {
+  border-bottom-right-radius: 90px;
+  border-top-right-radius: 90px;
+  border: 1px solid #eaeaea;
+  -webkit-box-shadow: 0px 1px 4px 0px #dedede;
+          box-shadow: 0px 1px 4px 0px #dedede;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
+  background: white;
+  cursor: pointer;
+  width: 5%;
+  font-size: larger;
+}
+
+@media only screen and (max-width: 425px) {
+  .SendEmail {
+    width: 19%;
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .SendEmail {
+    width: 10%;
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  .SendEmail {
+    width: 8%;
+    margin-top: 5%;
+  }
+}
+
+.SendEmail:hover {
+  -webkit-box-shadow: 1px 1px 2px 1px #dedede;
+          box-shadow: 1px 1px 2px 1px #dedede;
+}
+
+.SendEmail img {
+  height: 60px;
+}
+
+.errorWrap .Backdrop {
+  position: fixed;
+}
+
+.Error {
+  text-align: -webkit-center;
+  position: absolute;
+  top: 300px;
+  left: 25%;
+  width: 50%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #c8c8c8;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 1px 2px 2px 1px rgba(222, 222, 222, 0.65);
+          box-shadow: 1px 2px 2px 1px rgba(222, 222, 222, 0.65);
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.Error button {
+  width: 15%;
+  margin-top: 5%;
+}
+
+.NotFoundPage {
+  text-align: center;
+  margin-top: 10%;
+}
+/*# sourceMappingURL=index.css.map */
