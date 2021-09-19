@@ -56,9 +56,9 @@ export const auth = (email, password, isSignup) => {
 
 
             url = isSignup === false ? 
-            'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyB5GfvK2cdB9qJSVtkt4DFgbiqzImIOA9E' 
+            'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=[KEY]' 
 
-            : 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyB5GfvK2cdB9qJSVtkt4DFgbiqzImIOA9E'
+            : 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[KEY]'
 
 
 
